@@ -1,0 +1,25 @@
+{
+  "-- Foundations": {
+    "type": "separator",
+    "title": "Foundations"
+  },
+  "index": "Introduction",
+  "color": "Color",
+  "libraries": "Libraries",
+  "-- Components": {
+    "type": "separator",
+    "title": "Components"
+  },
+  "badge": "Badge",
+  "button": "Button",
+  "code-block": "Code Block",
+  "hover-card": "Hover Card",
+  "select": "Select",
+  "toast": "Toast",
+  "tooltip": "Tooltip",
+  "next.js-link": {
+    "title": "Next.js Docs ↗",
+    "href": "https://nextjs.org?utm_source=nextra.site&utm_medium=referral&utm_campaign=sidebar",
+    "newWindow": true
+  }
+}

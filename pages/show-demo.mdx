@@ -1,0 +1,81 @@
+---
+title: Showcase
+---
+
+import { Cards } from 'nextra/components'
+
+{<h1 className="mt-10 mb-4 text-center text-[2.5rem] font-bold tracking-tight">Showcase</h1>}
+
+{<p className="mb-16 text-center text-lg text-gray-500 dark:text-gray-400">Open
+source projects powered by Nextra</p>}
+
+<Cards>
+  <ShowcaseCard title="Node.js" href="https://nodejs.org/en">
+    <>![Node.js preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="The Graph" href="https://thegraph.com/docs/en">
+    <>![The Graph preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="Turbo" href="https://turbo.build">
+    <>![Turbo preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="SWR" href="https://swr.vercel.app">
+    <>![SWR preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="COBE" href="https://cobe.vercel.app">
+    <>![COBE preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard
+    title="JavaScript Patterns"
+    href="https://javascriptpatterns.vercel.app"
+  >
+    <>![JavaScript Patterns preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard
+    title="CodeSandbox"
+    href="https://codesandbox.io/docs/learn/introduction/overview"
+  >
+    <>![CodeSandbox preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="DocsGPT" href="https://docs.docsgpt.co.uk">
+    <>![DocsGPT preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="CloudQuery" href="https://cloudquery.io">
+    <>![CloudQuery preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="Edge Runtime" href="https://edge-runtime.vercel.app">
+    <>![Edge Runtime preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard
+    title="Livepeer"
+    href="https://docs.livepeer.org/guides/overview"
+  >
+    <>![Livepeer preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="Sound.xyz" href="https://docs.sound.xyz">
+    <>![Sound.xyz preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+  <ShowcaseCard title="Million" href="https://million.dev">
+    <>![Million preview](https://cdn.jsdelivr.net/gh/liaoyio/imgHosting/2023/log/compact-folders.png)</>
+  </ShowcaseCard>
+</Cards>
+
+export const ShowcaseCard = Object.assign(
+  // Copy card component and add default props
+  Cards.Card.bind(),
+  {
+    displayName: 'ShowcaseCard',
+    defaultProps: {
+      image: true,
+      arrow: true,
+      target: '_blank'
+    }
+  }
+)
+
+<style global jsx>{`
+  img {
+    aspect-ratio: 12/6.3;
+    object-fit: cover;
+  }
+`}</style>

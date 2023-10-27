@@ -1,0 +1,42 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Nextra",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "design": {
+    "type": "page",
+    "title": "Design"
+  },
+  "show-demo": {
+    "type": "page",
+    "title": "Demo",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
+  },
+  "about": {
+    "type": "page",
+    "title": "About",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "contact": {
+    "title": "Yi' notes (Vue) ↗",
+    "type": "page",
+    "href": "https://liaoyio.github.io/notes/",
+    "newWindow": true
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}
