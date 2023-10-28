@@ -1,1 +1,70 @@
 # Libraries
+
+这个网站参考了许多优秀的开源库/工作设计系统进行构建，您可以在下面列表中找到它们的链接。
+
+## Libraries
+
+大致按重要性排序。
+
+import { ExternalLink } from 'lucide-react';
+import { FeatureDisplayMinimal } from '@components/design'
+import { Button } from '@components/ui';
+import { libList, tailwindCSSpluginsList, acknowledgementsList } from '@components/design/data'
+
+<div className="grid grid-cols-2 gap-4 py-4">
+  {libList.map((item, index) => (
+    <FeatureDisplayMinimal
+      key={`libraries-${index}`}
+      className="col-span-2 w-full lg:col-span-1"
+      name={item.name}
+      description={item.description}
+      symbol={item.symbol}
+      button={
+        <Button size="sm" rightIcon={<ExternalLink />} href={item.href} newTab>
+          View
+        </Button>
+      }
+    />
+  ))}
+</div>
+
+
+## Tailwind CSS 插件
+
+`Tailwind CSS` 在开源社区拥有丰富的插件, [点击这里](https://tailwindcss.com/docs/plugins) 查看更多内容。
+
+<div className="grid grid-cols-2 gap-4 py-4">
+  {tailwindCSSpluginsList.map((item, index) => (
+    <FeatureDisplayMinimal
+      key={`libraries-tailwindcss-plugins-${index}`}
+      className="col-span-2 w-full lg:col-span-1"
+      name={item.name}
+      description={item.description}
+      symbol={item.symbol}
+      button={
+        <Button size="sm" rightIcon={<ExternalLink />} href={item.href} newTab>
+          View
+        </Button>
+      }
+    />
+  ))}
+</div>
+
+## 致敬
+
+<div className="grid grid-cols-2 gap-4 py-4">
+  {acknowledgementsList.map((item, index) => (
+    <FeatureDisplayMinimal
+      key={`libraries-acknowledgement-${index}`}
+      className="col-span-2 w-full lg:col-span-1"
+      name={item.name}
+      description={item.description}
+      symbol={item.symbol}
+      button={
+        <Button size="sm" rightIcon={<ExternalLink />} href={item.href} newTab>
+          View
+        </Button>
+      }
+    />
+  ))}
+</div>
