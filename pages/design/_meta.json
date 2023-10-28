@@ -3,7 +3,13 @@
     "type": "separator",
     "title": "Foundations"
   },
-  "index": "Introduction",
+  "index": {
+    "title": "Introduction",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
   "color": "Color",
   "libraries": "Libraries",
   "-- Components": {

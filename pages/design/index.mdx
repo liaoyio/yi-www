@@ -1,1 +1,88 @@
 # Introduction
+
+一个开源设计系统，旨在可访问，功能强大，并在整个网站上提供一致的感觉。
+
+import { ArrowRight, ChevronRight, Github } from 'lucide-react';
+import { Button, Tooltip, Badge, Select } from '@components/ui';
+import { ComponentCard, ToastButton } from '@components/common';
+
+<div className="grid grid-cols-2 flex-wrap gap-2 min-[432px]:flex pt-6">
+  <Button
+    className="col-span-2 w-full min-[432px]:w-fit"
+    href="https://github.com/fiveoutofnine/www"
+    leftIcon={<Github />}
+    children="fiveoutofnine/www"
+    newTab
+  />
+  <Button
+    className="col-span-1 w-full min-[432px]:w-fit"
+    variant="outline"
+    href="/design/color"
+    rightIcon={<ChevronRight />}
+    children="Color"
+  />
+  <Button
+    className="col-span-1 w-full min-[432px]:w-fit"
+    variant="outline"
+    href="/design/libraries"
+    rightIcon={<ChevronRight />}
+    children="Libraries"
+  />
+</div>
+
+
+## Components 组件
+
+
+<div className="grid grid-cols-2 gap-4 lg:grid-cols-4 pt-8">
+
+  <ComponentCard href="/design/badge">
+    <Badge children="Badge" />
+  </ComponentCard>
+
+  <ComponentCard href="/design/button">
+    <Button children="Button" />
+  </ComponentCard>
+
+  <ComponentCard
+    className="col-span-2 sm:col-span-1 md:col-span-2 xl:col-span-1"
+    href="/design/code-block"
+  >
+    {/* <CodeBlock
+      className="mx-4 w-full"
+      fileName="code-block.sol"
+      language="sol"
+      showLineNumbers={false}
+      children={`if (p & 3 == 1) { if (x*x + y*y - p > 1) return false; } // https://twitter.com/fiveoutofnine/status/1658930303019122688`}
+    /> */}
+  </ComponentCard>
+  <ComponentCard href="/design/hover-card">
+    {/* <FiveoutofnineHoverCard
+      trigger={
+        <Link
+          className="text-sm font-medium text-gray-12 no-underline hover:underline"
+          href="https://twitter.com/fiveoutofnine"
+          target="_blank"
+          rel="noreferrer noopener"
+          children="Hover Card"
+        />
+      }
+    /> */}
+  </ComponentCard>
+  <ComponentCard href="/design/select">
+    <Select>
+    <option children="Select 1" />
+    <option children="Select 2" />
+    <option children="Select 3" />
+    </Select>
+  </ComponentCard>
+  <ComponentCard href="/design/toast">
+    <ToastButton children="Toast" />
+  </ComponentCard>
+  <ComponentCard href="/design/tooltip">
+    <Tooltip content="5/9 moment">
+      <Button children="Tooltip" />
+    </Tooltip>
+  </ComponentCard>
+</div>
+

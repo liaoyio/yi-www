@@ -24,7 +24,13 @@ module.exports = {
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'never'],
     'react/react-in-jsx-scope': 'off',
-    'prettier/prettier': ['error', {}],
+    'prettier/prettier': [
+      'error',
+      {
+        'no-multiple-empty-lines': [2, { max: 2 }], // 最多一个空行
+        'max-empty-lines': 2
+      }
+    ],
     indent: 'off',
     'react/no-unescaped-entities': 'off',
     'react/prop-types': 'off'

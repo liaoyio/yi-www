@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Footer from '@components/theme/footer'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
@@ -8,7 +9,9 @@ const config: DocsThemeConfig = {
     link: 'https://github.com/liaoyio'
   },
   docsRepositoryBase: 'https://github.com/liaoyio',
-  footer: { text: 'Yi' }
+  footer: {
+    component: Footer
+  }
 }
 
 export default config

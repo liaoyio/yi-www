@@ -5,6 +5,8 @@ module.exports = {
   printWidth: 100,
   tabWidth: 2,
   singleQuote: true,
+  'max-empty-lines': 2,
+  endOfLine: 'auto',
   importOrder: [
     '(^(react/(.*)$)|^(react$))|(^(next/(.*)$)|^(next$))',
     '<THIRD_PARTY_MODULES>',
