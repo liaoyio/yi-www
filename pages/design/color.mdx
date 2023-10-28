@@ -1,1 +1,51 @@
-# Colors
+# Color
+
+设计系统使用 [Radix UI colors](https://www.radix-ui.com/colors) 来 [确保可访问性]((https://www.radix-ui.com/docs/colors/tests))并 [轻松保持一致的代码/设计](https://www.radix-ui.com/docs/colors/palette-composition/understanding-the-scale)。
+
+此外，为了使与 [Tailwind CSS](https://tailwindcss.com)  的集成和明/暗模式切换的实现变得容易，设计系统利用 [windy-radix-palette](https://github.com/brattonross/windy-radix-palette) Tailwind CSS 插件，该插件将Radix UI颜色添加为支持暗夜模式的 Tailwind 样式。
+
+
+## Scales
+
+以下是整个设计系统中使用的 Radix UI 颜色范围。您可以在 [Radix UI 官网](https://www.radix-ui.com/docs/colors/palette-composition/the-scales) 上找到完整的颜色样式表。
+
+import { ColorScale } from '@components/design/index'
+
+### Gray - `none`
+默认色阶，标记为 `none` 。
+<ColorScale scale="gray" />
+
+
+
+### Blue - `primary`
+标有 `primary` 的原色阶。
+<ColorScale scale="blue" />
+
+
+
+
+### Red - `fail`
+失败状态的色阶，标记为 `fail` 。
+<ColorScale scale="red" />
+
+
+
+
+### Green - `success`
+成功状态的色阶，标记为 `success` 。
+<ColorScale scale="green" />
+
+
+
+
+### Yellow - `warning`
+警告状态的色阶，标记为 `warning` 。
+<ColorScale scale="yellow" />
+
+
+
+
+### Orange - `orange`
+橙色色标，标记为 `orange` 。
+<ColorScale scale="orange" />
+
