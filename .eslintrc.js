@@ -24,6 +24,7 @@ module.exports = {
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'never'],
     'react/react-in-jsx-scope': 'off',
+    'react/no-children-prop': 'off',
     'prettier/prettier': [
       'error',
       {

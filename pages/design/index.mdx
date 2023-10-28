@@ -4,14 +4,15 @@
 
 import { ArrowRight, ChevronRight, Github } from 'lucide-react';
 import { Button, Tooltip, Badge, Select, CodeBlock } from '@components/ui';
-import { ComponentCard, ToastButton } from '@components/common';
+import { ComponentCard, ToastButton, YiHoverCard } from '@components/common';
+import Link from 'next/link'
 
 <div className="grid grid-cols-2 flex-wrap gap-2 min-[432px]:flex pt-6">
   <Button
     className="col-span-2 w-full min-[432px]:w-fit"
-    href="https://github.com/fiveoutofnine/www"
+    href="https://github.com/liaoyio"
     leftIcon={<Github />}
-    children="fiveoutofnine/www"
+    children="liaoyio/www"
     newTab
   />
   <Button
@@ -31,7 +32,7 @@ import { ComponentCard, ToastButton } from '@components/common';
 </div>
 
 
-## Components 组件
+## 组件
 
 
 <div className="grid grid-cols-2 gap-4 lg:grid-cols-4 pt-8">
@@ -57,17 +58,17 @@ import { ComponentCard, ToastButton } from '@components/common';
     />
   </ComponentCard>
   <ComponentCard href="/design/hover-card">
-    {/* <FiveoutofnineHoverCard
+    <YiHoverCard
       trigger={
         <Link
           className="text-sm font-medium text-gray-12 no-underline hover:underline"
-          href="https://twitter.com/fiveoutofnine"
+          href="https://github.com/liaoyio"
           target="_blank"
           rel="noreferrer noopener"
           children="Hover Card"
         />
       }
-    /> */}
+    />
   </ComponentCard>
   <ComponentCard href="/design/select">
     <Select>
