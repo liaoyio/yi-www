@@ -11,6 +11,20 @@
     "type": "page",
     "title": "Design"
   },
+  "ui": {
+    "title": "UI View",
+    "type": "menu",
+    "items": {
+      "ui": {
+        "title": "Yi' like",
+        "href": "/ui"
+      },
+      "com": {
+        "title": "Components",
+        "href": "/ui/com"
+      }
+    }
+  },
   "show-demo": {
     "type": "page",
     "title": "Demo",
