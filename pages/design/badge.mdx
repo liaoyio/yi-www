@@ -1,1 +1,40 @@
 # Badge
+
+A label used to display the status, category, or emphasis of an item.
+
+import { ComponentsDisplay } from '@components/design'
+import { Badge } from '@components/ui';
+
+## Size
+
+<ComponentsDisplay className="grid-flow-col grid-rows-1 py-4">
+  <Badge size="sm" children="Badge" />
+  <Badge size="md" children="Badge" />
+  <Badge size="lg" children="Badge" />
+  <div type="div-age">123 div</div>
+  <p>123 span</p>
+</ComponentsDisplay>
+
+## Variant
+
+<ComponentsDisplay className="grid-flow-col grid-rows-1 py-4">
+  <Badge variant="primary" children="Badge" />
+  <Badge variant="secondary" children="Badge" />
+</ComponentsDisplay>
+
+## Intent
+
+<ComponentsDisplay className="grid-flow-col grid-rows-6 md:grid-rows-4 lg:grid-rows-2 py-4">
+  <Badge variant="primary" intent="none" children="Badge" />
+  <Badge variant="secondary" intent="none" children="Badge" />
+  <Badge variant="primary" intent="primary" children="Badge" />
+  <Badge variant="secondary" intent="primary" children="Badge" />
+  <Badge variant="primary" intent="fail" children="Badge" />
+  <Badge variant="secondary" intent="fail" children="Badge" />
+  <Badge variant="primary" intent="success" children="Badge" />
+  <Badge variant="secondary" intent="success" children="Badge" />
+  <Badge variant="primary" intent="warning" children="Badge" />
+  <Badge variant="secondary" intent="warning" children="Badge" />
+  <Badge variant="primary" intent="orange" children="Badge" />
+  <Badge variant="secondary" intent="orange" children="Badge" />
+</ComponentsDisplay>
