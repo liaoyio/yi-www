@@ -7,5 +7,158 @@
       "typesetting": "article",
       "layout": "full"
     }
+  },
+  "-- Text": {
+    "type": "separator",
+    "title": "Text"
+  },
+  "text-gradient": {
+    "title": "Text Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "text-animated-gradient": {
+    "title": "Text Animated Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "text-shine": {
+    "title": "Text Shine",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "-- Button": {
+    "type": "separator",
+    "title": "Button"
+  },
+  "button-background-shine": {
+    "title": "Button Background Shine",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "button-gradient": {
+    "title": "Button Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "button-hover-gradient": {
+    "title": "Button Hover Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "button-background-spotlight": {
+    "title": "Button Background Spotlight",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "button-rotating-background-gradient": {
+    "title": "Button Rotating Background Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "button-shadow-gradient": {
+    "title": "Button Shadow Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "-- Input": {
+    "type": "separator",
+    "title": "Input"
+  },
+  "input-gradient-border": {
+    "title": "Input Gradient Border",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "input-spotlight-border": {
+    "title": "Input Spotlight Border",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "input-pulse-border": {
+    "title": "Input Pulse Border",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "-- Badge": {
+    "type": "separator",
+    "title": "Badge"
+  },
+  "badge-animated-gradient-border": {
+    "title": "Badge Animated Gradient Border",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "badge-shine": {
+    "title": "Badge Shine",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "badge-text-gradient": {
+    "title": "Badge Text Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "-- Card": {
+    "type": "separator",
+    "title": "Card"
+  },
+  "card-animated-border-gradient": {
+    "title": "Card Animated Border Gradient",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "card-spotlight": {
+    "title": "Card Spotlight",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "card-pulse-border": {
+    "title": "Card Pulse Border",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
+  },
+  "card-tilt": {
+    "title": "Card Tilt",
+    "theme": {
+      "toc": false,
+      "layout": "full"
+    }
   }
 }

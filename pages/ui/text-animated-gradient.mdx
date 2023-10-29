@@ -1,0 +1,25 @@
+
+# Text Animated Gradient
+
+import ComponentPlayground from '@components/pages/ui-snippets/component-playground'
+
+
+<ComponentPlayground isCentered name="text-animated-gradient">
+````js filename="tailwind.config.js"
+{
+    animation: {
+      'text-gradient': 'text-gradient 1.5s linear infinite'
+    },
+    keyframes: {
+      'text-gradient': {
+        to: {
+          backgroundPosition: '200% center'
+        }
+      }
+    }
+}
+````
+</ ComponentPlayground >
+
+
+

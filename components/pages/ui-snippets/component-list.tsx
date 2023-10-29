@@ -11,12 +11,12 @@ type CardComponentProps = {
 const CardComponent: React.FC<CardComponentProps> = ({ children, slug, name }) => {
   return (
     <div className="relative flex items-center justify-center rounded-xl border border-gray-4 bg-black px-8 py-32 backdrop-blur  transition-colors hover:border-gray-6">
-      <Link href={`/${slug}`} className="absolute left-5 top-4 text-sm text-slate-400">
+      <Link href={`/ui/${slug}`} className="absolute left-5 top-4 text-sm text-slate-400">
         {name}
       </Link>
       <div className="absolute right-5 top-3">
         <Link
-          href={`/${slug}`}
+          href={`/ui/${slug}`}
           className="flex h-7 w-7 items-center justify-center rounded transition hover:bg-gray-3"
         >
           <ArrowRight className="h-5 w-5 text-slate-400" />

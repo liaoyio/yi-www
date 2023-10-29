@@ -18,7 +18,7 @@ import TextAnimatedGradient from './text/TextAnimatedGradient'
 import TextGradient from './text/TextGradient'
 import TextShine from './text/TextShine'
 
-const TWCONFIG = {
+export const TWCONFIG = {
   ['text-gradient']: {
     animation: {
       'text-gradient': 'text-gradient 1.5s linear infinite'

@@ -1,0 +1,23 @@
+# Card Pulse Border
+
+import ComponentPlayground from '@components/pages/ui-snippets/component-playground'
+
+
+<ComponentPlayground isCentered name="card-pulse-border" >
+````js filename="tailwind.config.js"
+{
+    animation: {
+      'border-width': 'border-width 3s infinite alternate'
+    },
+    keyframes: {
+      'border-width': {
+        from: { width: '10px', opacity: '0' },
+        to: { width: '100px', opacity: '1' }
+      }
+   }
+}
+````
+</ ComponentPlayground>
+
+
+
