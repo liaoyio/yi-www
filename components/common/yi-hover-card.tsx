@@ -34,7 +34,7 @@ export const YiHoverCard = ({ trigger }) => {
           target="_blank"
           rel="noreferrer noopener"
         >
-          <span className="font-medium text-gray-12" children="002 " />
+          <span className="font-medium text-gray-12" children="002" />
           <span children="Following" />
         </a>
         <a

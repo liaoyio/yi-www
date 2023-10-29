@@ -1,1 +1,87 @@
+import { Circle } from 'lucide-react';
+
+import { ComponentsDisplay } from '@components/design'
+import { Button, Select } from '@components/ui';
+
+export const SelectOptions = () => {
+  return <>
+    <option children="Select 1" />
+    <option children="Select 2" />
+    <option children="Select 3" />
+  </>
+}
+
 # Select
+
+A widget that presents a list of options and allows a user to select one of them.
+
+> To maximize [accessibility](https://www.w3.org/WAI/ARIA/apg/patterns/listbox/), `Select` extends the browser's native [`<select>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select) element.
+
+## Size
+
+<ComponentsDisplay className="grid-flow-col grid-rows-2 lg:grid-rows-1">
+  <Select size="sm" children={<SelectOptions />} />
+  <Select size="md" children={<SelectOptions />} />
+  <Select size="lg" children={<SelectOptions />} />
+  <Select size="xl" children={<SelectOptions />} />
+</ComponentsDisplay>
+
+## Variant
+
+<ComponentsDisplay className="grid-flow-col grid-rows-2 lg:grid-rows-1">
+  <Select variant="primary" children={<SelectOptions />} />
+  <Select variant="secondary" children={<SelectOptions />} />
+  <Select variant="outline" children={<SelectOptions />} />
+  <Select variant="ghost" children={<SelectOptions />} />
+</ComponentsDisplay>
+
+## Intent
+
+<ComponentsDisplay className="md:grid-rows-8 grid-flow-col grid-rows-12 lg:grid-rows-4">
+  <Select variant="primary" intent="none" children={<SelectOptions />} />
+  <Select variant="secondary" intent="none" children={<SelectOptions />} />
+  <Select variant="outline" intent="none" children={<SelectOptions />} />
+  <Select variant="ghost" intent="none" children={<SelectOptions />} />
+  <Select variant="primary" intent="primary" children={<SelectOptions />} />
+  <Select variant="secondary" intent="primary" children={<SelectOptions />} />
+  <Select variant="outline" intent="primary" children={<SelectOptions />} />
+  <Select variant="ghost" intent="primary" children={<SelectOptions />} />
+  <Select variant="primary" intent="fail" children={<SelectOptions />} />
+  <Select variant="secondary" intent="fail" children={<SelectOptions />} />
+  <Select variant="outline" intent="fail" children={<SelectOptions />} />
+  <Select variant="ghost" intent="fail" children={<SelectOptions />} />
+  <Select variant="primary" intent="success" children={<SelectOptions />} />
+  <Select variant="secondary" intent="success" children={<SelectOptions />} />
+  <Select variant="outline" intent="success" children={<SelectOptions />} />
+  <Select variant="ghost" intent="success" children={<SelectOptions />} />
+  <Select variant="primary" intent="warning" children={<SelectOptions />} />
+  <Select variant="secondary" intent="warning" children={<SelectOptions />} />
+  <Select variant="outline" intent="warning" children={<SelectOptions />} />
+  <Select variant="ghost" intent="warning" children={<SelectOptions />} />
+  <Select variant="primary" intent="orange" children={<SelectOptions />} />
+  <Select variant="secondary" intent="orange" children={<SelectOptions />} />
+  <Select variant="outline" intent="orange" children={<SelectOptions />} />
+  <Select variant="ghost" intent="orange" children={<SelectOptions />} />
+</ComponentsDisplay>
+
+## Disabled
+
+<ComponentsDisplay className="grid-flow-col grid-rows-4 lg:grid-rows-2">
+  <Select variant="primary" children={<SelectOptions />} />
+  <Select variant="primary" children={<SelectOptions />} disabled />
+  <Select variant="secondary" children={<SelectOptions />} />
+  <Select variant="secondary" children={<SelectOptions />} disabled />
+  <Select variant="outline" children={<SelectOptions />} />
+  <Select variant="outline" children={<SelectOptions />} disabled />
+  <Select variant="ghost" children={<SelectOptions />} />
+  <Select variant="ghost" children={<SelectOptions />} disabled />
+</ComponentsDisplay>
+
+## Right icon
+
+To override the default `ChevronDown` icon (from [`lucide-react`](https://lucide.dev)), pass a custom icon component to the `rightIcon` prop.
+
+<ComponentsDisplay highlightLines={[2]} sourceInitiallyDisplayed>
+  <Select rightIcon={<Circle />} children={<SelectOptions />} />
+</ComponentsDisplay>
+

@@ -96,3 +96,23 @@ export const acknowledgementsList = [
     href: 'https://vercel.com/design/introduction'
   }
 ]
+
+export const MARKDOWN_SAMPLE_CODE =
+  '```tsx fileName="Example.tsx" showLineNumbers={false}\nconst Example = () => <div />\n```'
+
+export const TSX_SAMPLE_CODE = `const Counter: FC = () => {
+  const [count, setCount] = useState<number>(0)\n
+  return <button onClick={() => setCount(count + 1)}>{count}</button>
+}`
+
+export const CODE_BLOCK = `// Minimal version for display purposes.
+const CodeBlock: FC = () => {
+  return (
+    <CodeBlockContainer>
+      <CodeBlockHeader />
+      <pre>
+        <Code />
+      </pre>
+    </CodeBlockContainer>
+  )
+}`

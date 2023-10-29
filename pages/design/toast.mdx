@@ -1,1 +1,102 @@
+import { ExternalLink } from 'lucide-react';
+
+import { ComponentsDisplay } from '@components/design'
+import { ToastButton } from '@components/common'
+import { Button, Toaster, useToast, CodeBlock  } from '@components/ui';
+
 # Toast
+
+A succinct message that is displayed temporarily.
+
+`Toaster` and its components extend and require Radix UI's [`@radix-ui/react-toast`](https://www.radix-ui.com/docs/primitives/components/toast).
+
+## Usage
+
+First, import and add the `Toaster` component to your app.
+
+
+<CodeBlock
+className="my-4"
+fileName="pages/_app.tsx"
+language="tsx" highlightLines={[1, 7]}
+children={`import { Toaster } from '@/components/ui'
+
+const App: FC<AppProps> = ({ Component, pageProps }) => {
+  return (
+    <main>
+      <Component {...pageProps} />
+      <Toaster />
+    </main>
+  )
+}`} />
+
+
+
+
+Then, import the `useToast` hook, which returns a `toast` function that displays toasts when called:
+
+<CodeBlock
+className="my-4"
+language="tsx" highlightLines={[1, 10, 15]}
+children={`import { useToast } from '@/components/ui'
+
+const ToastButton: FC = ({
+  title = 'Title',
+  description = 'Swipe right to remove.',
+  intent,
+  action,
+  ...rest
+}) => {
+  const { toast } = useToast();
+
+  return (
+    <Button
+      intent={intent}
+      onClick={() => toast({ title, description, intent, action })}
+      {...rest}
+    />
+  )
+}`} />
+
+
+## Default
+
+<ComponentsDisplay>
+  <ToastButton title="Title" description="Swipe right to remove." children="Show toast" />
+</ComponentsDisplay>
+
+## Intent
+
+<ComponentsDisplay className="grid-flow-col grid-rows-3 md:grid-rows-1">
+  <ToastButton intent="none" children="None" />
+  <ToastButton intent="primary" children="Primary" />
+  <ToastButton intent="fail" children="Fail" />
+  <ToastButton intent="success" children="Success" />
+  <ToastButton intent="warning" children="Warning" />
+</ComponentsDisplay>
+
+## With action
+
+To add an action to the toast, pass in a [`Button`](/design/component/button) element to the `action` prop. Note that `action` takes in any React node, but it is intended to be a `Button` element that triggers some relevant action.
+
+<ComponentsDisplay
+  highlightLines={[6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}
+  sourceInitiallyDisplayed
+>
+  <ToastButton
+    title="Contract deployed"
+    description="Contract deployed to 0x00000000…."
+    intent="success"
+    action={
+      <Button
+        size="sm"
+        intent="success"
+        href="https://etherscan.io/tx/0x0100b7a91f27db8ea706a0f729bf0677e45a8647cf7dd25fc249dce3710bea81"
+        rightIcon={<ExternalLink />}
+        children="View"
+        newTab
+      />
+    }
+    children="Show toast"
+  />
+</ComponentsDisplay>

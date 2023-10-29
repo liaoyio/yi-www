@@ -96,8 +96,9 @@ const DesignComponentsDisplay: FC<DesignComponentsDisplayProps> = ({
     const componentChildren = Children.toArray(children)
     const childrenJsxString = componentChildren.map((child) => getJsxString(child)).join()
 
-    const childrenStr = componentChildren.length > 0 ? childrenJsxString : null
-    return `<${componentName} ${propString}>${childrenStr}</${componentName}>`
+    return componentChildren.length > 0
+      ? `<${componentName} ${propString}>${childrenJsxString}</${componentName}>`
+      : `<${componentName} ${propString}/>`
   }, [])
 
   const code = useMemo(() => {
@@ -105,7 +106,7 @@ const DesignComponentsDisplay: FC<DesignComponentsDisplayProps> = ({
 
     try {
       const componentChildren = Children.toArray(children).filter((child) => isValidElement(child))
-      console.log(componentChildren)
+
       const childrenStr = componentChildren.map((child) => getJsxString(child)).join('\n\t')
       const styles = className ? ` className="${className}"` : ''
       const codeStr = `<DesignComponentsDisplay${styles}>\n\t${childrenStr}\n</DesignComponentsDisplay>`
@@ -117,7 +118,7 @@ const DesignComponentsDisplay: FC<DesignComponentsDisplayProps> = ({
   }, [children, className, getJsxString, showSource])
 
   return (
-    <div className="grid w-full grid-cols-1">
+    <div className="grid w-full grid-cols-1 py-6">
       <div
         className={twMerge(
           clsx(
