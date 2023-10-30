@@ -5,6 +5,7 @@
     "href": "/ui",
     "theme": {
       "typesetting": "article",
+      "toc": false,
       "layout": "full"
     }
   },
@@ -15,22 +16,19 @@
   "text-gradient": {
     "title": "Text Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "text-animated-gradient": {
     "title": "Text Animated Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "text-shine": {
     "title": "Text Shine",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "-- Button": {
@@ -40,43 +38,37 @@
   "button-background-shine": {
     "title": "Button Background Shine",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "button-gradient": {
     "title": "Button Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "button-hover-gradient": {
     "title": "Button Hover Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "button-background-spotlight": {
     "title": "Button Background Spotlight",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "button-rotating-background-gradient": {
     "title": "Button Rotating Background Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "button-shadow-gradient": {
     "title": "Button Shadow Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "-- Input": {
@@ -86,22 +78,19 @@
   "input-gradient-border": {
     "title": "Input Gradient Border",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "input-spotlight-border": {
     "title": "Input Spotlight Border",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "input-pulse-border": {
     "title": "Input Pulse Border",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "-- Badge": {
@@ -111,22 +100,19 @@
   "badge-animated-gradient-border": {
     "title": "Badge Animated Gradient Border",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "badge-shine": {
     "title": "Badge Shine",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "badge-text-gradient": {
     "title": "Badge Text Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "-- Card": {
@@ -136,29 +122,25 @@
   "card-animated-border-gradient": {
     "title": "Card Animated Border Gradient",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "card-spotlight": {
     "title": "Card Spotlight",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "card-pulse-border": {
     "title": "Card Pulse Border",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   },
   "card-tilt": {
     "title": "Card Tilt",
     "theme": {
-      "toc": false,
-      "layout": "full"
+      "toc": false
     }
   }
 }

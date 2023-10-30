@@ -3,7 +3,7 @@ const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
   themeConfig: './theme.config.tsx',
   defaultShowCopyCode: true,
-  showLineNumbers: true
+  defaultshowLineNumbers: true
 })
 
 /** @type {import('next').NextConfig} */

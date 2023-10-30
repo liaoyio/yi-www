@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
 import Footer from '@components/theme/footer'
@@ -11,6 +12,28 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/liaoyio',
   footer: {
     component: Footer
+  },
+  useNextSeoProps() {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
+      return { titleTemplate: "%s – Yi'notes" }
+    }
+  },
+  editLink: {
+    text: 'Edit this page on GitHub →'
+  },
+  feedback: {
+    content: 'Question? Give us feedback →',
+    labels: 'feedback'
+  },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+    toggleButton: true
+  },
+  darkMode: false,
+  toc: {
+    backToTop: true,
+    title: '返回顶部'
   }
 }
 

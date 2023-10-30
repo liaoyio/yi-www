@@ -4,8 +4,20 @@
 import ComponentPlayground from '@components/pages/ui-snippets/component-playground'
 
 
-<ComponentPlayground isCentered name="text-shine">
-````js filename="tailwind.config.js"
+<ComponentPlayground isCentered name="text-shine" />
+
+```jsx showLineNumbers
+export const TextShine = () => {
+  return (
+    <span className="animate-background-shine inline-flex bg-[linear-gradient(110deg,#939393,45%,#1e293b,55%,#939393)] bg-[length:250%_100%] bg-clip-text text-xl text-transparent">
+      Sample Text
+    </span>
+  )
+}
+```
+
+
+````js showLineNumbers filename="tailwind.config.js"
 {
     animation: {
       'background-shine': 'background-shine 2s linear infinite'
@@ -18,7 +30,3 @@ import ComponentPlayground from '@components/pages/ui-snippets/component-playgro
     }
 }
 ````
-</ComponentPlayground>
-
-
-

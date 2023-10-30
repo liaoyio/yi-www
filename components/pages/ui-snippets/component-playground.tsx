@@ -47,6 +47,11 @@ const ComponentPlayground: React.FC<ComponentPlaygroundProps> = ({
       </div>
       {/* code */}
       <div className={children ? 'mt-8 py-4' : ''}>{children}</div>
+      <style global jsx>{`
+        .nextra-toc {
+          width: 0 !important;
+        }
+      `}</style>
     </>
   )
 }

@@ -77,10 +77,10 @@ const Shadcn = () => {
       <desc>shadcn&apos;s logo.</desc>
       <path
         d="m22.045 12.479-9.566 9.566m7.652-20.088L1.957 20.13"
-        stroke-width="1.913"
+        strokeWidth="1.913"
         stroke="currentColor"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   )

@@ -3,8 +3,21 @@
 import ComponentPlayground from '@components/pages/ui-snippets/component-playground'
 
 
-<ComponentPlayground isCentered name="button-background-shine">
-````js filename="tailwind.config.js"
+<ComponentPlayground isCentered name="button-background-shine"/>
+
+```jsx
+export const ButtonBackgroundShine = () => {
+  return (
+    <>
+      <button className="inline-flex h-12 animate-background-shine items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
+        Click Me
+      </button>
+    </>
+  )
+}
+```
+
+````js showLineNumbers filename="tailwind.config.js"
 {
     animation: {
       'background-shine': 'background-shine 2s linear infinite'
@@ -17,7 +30,3 @@ import ComponentPlayground from '@components/pages/ui-snippets/component-playgro
     }
 }
 ````
-</ ComponentPlayground>
-
-
-
