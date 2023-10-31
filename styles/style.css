@@ -22,23 +22,3 @@
     height: -webkit-fill-available;
   }
 }
-
-.dark{
-  --theme-bg: #111;
-  --theme-border: #2e2e2e;
-  --theme-active-bg: #292929;
-  --theme-btn-color: #888;
-  --active-svg:#fafafa;
-  --hover-btn-svg: #fafafa;
-}
-
-
-
-.light{
-  --theme-bg: #fafafa;
-  --theme-border: #ebebeb;
-  --theme-active-bg: #e6e5e5;
-  --theme-btn-color: #666666;
-  --active-svg:#171717;
-  --hover-btn-svg: #6666669d;
-}

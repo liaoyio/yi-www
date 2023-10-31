@@ -9,6 +9,17 @@
       "layout": "full"
     }
   },
+  "bg": {
+    "display": "hidden",
+    "theme": {
+      "breadcrumb": false,
+      "footer": false,
+      "sidebar": false,
+      "toc": false,
+      "pagination": false,
+      "layout": "full"
+    }
+  },
   "-- Text": {
     "type": "separator",
     "title": "Text"

@@ -77,92 +77,113 @@ const ThemeSwitcher = () => {
   const isChecked = (value: string) => theme === value
 
   return (
-    <div className="flex rounded-full border-[1px] border-solid border-[--theme-border] bg-[--theme-bg] p-[3px]">
-      <span style={{ height: '100%' }}>
-        <input
-          className="peer/system absolute appearance-none outline-none"
-          type="radio"
-          id="theme-switcher-system"
-          value="system"
-          onChange={handleChange}
-          checked={isChecked('system')}
-        />
-        <label
-          className={
-            'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-none transition-all duration-100 ease-in-out' +
-            ' ' +
-            'hover:bg-[--theme-bg]' +
-            ' ' +
-            'peer-checked/system:bg-[--theme-active-bg]' +
-            ' ' +
-            '[&_svg]:!text-[--theme-btn-color] [&_svg]:transition-colors [&_svg]:duration-100 [&_svg]:ease-in-out' +
-            ' ' +
-            'hover:[&_svg]:!text-[--hover-btn-svg] peer-checked/system:[&_svg]:!text-[--active-svg]'
-          }
-          htmlFor="theme-switcher-system"
-          aria-label="Switch to system mode"
-          title="Switch to system mode"
-        >
-          <SystemIcon />
-        </label>
-      </span>
-      <span style={{ height: '100%' }}>
-        <input
-          className="peer/dark absolute appearance-none outline-none"
-          type="radio"
-          id="theme-switcher-dark"
-          value="dark"
-          onChange={handleChange}
-          checked={isChecked('dark')}
-        />
-        <label
-          className={
-            'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-none transition-all duration-100 ease-in-out' +
-            ' ' +
-            'hover:bg-[--theme-bg]' +
-            ' ' +
-            'peer-checked/dark:bg-[--theme-active-bg]' +
-            ' ' +
-            '[&_svg]:!text-[--theme-btn-color] [&_svg]:transition-colors [&_svg]:duration-100 [&_svg]:ease-in-out' +
-            ' ' +
-            'hover:[&_svg]:!text-[--hover-btn-svg] peer-checked/dark:[&_svg]:!text-[--active-svg]'
-          }
-          htmlFor="theme-switcher-dark"
-          aria-label="Switch to dark mode"
-          title="Switch to dark mode"
-        >
-          <DarkIcon />
-        </label>
-      </span>
-      <span style={{ height: '100%' }}>
-        <input
-          className="peer/light absolute appearance-none outline-none"
-          type="radio"
-          id="theme-switcher-light"
-          value="light"
-          onChange={handleChange}
-          checked={isChecked('light')}
-        />
-        <label
-          className={
-            'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-none transition-all duration-100 ease-in-out' +
-            ' ' +
-            'hover:bg-[--theme-bg]' +
-            ' ' +
-            'peer-checked/light:bg-[--theme-active-bg]' +
-            ' ' +
-            '[&_svg]:!text-[--theme-btn-color] [&_svg]:transition-colors [&_svg]:duration-100 [&_svg]:ease-in-out' +
-            ' ' +
-            'hover:[&_svg]:!text-[--hover-btn-svg] peer-checked/light:[&_svg]:!text-[--active-svg]'
-          }
-          htmlFor="theme-switcher-light"
-          aria-label="Switch to light mode"
-          title="Switch to light mode"
-        >
-          <SunIcon />
-        </label>
-      </span>
-    </div>
+    <>
+      <div className="flex rounded-full border-[1px] border-solid border-[--theme-border] bg-[--theme-bg] p-[3px]">
+        <span style={{ height: '100%' }}>
+          <input
+            className="peer/system absolute appearance-none outline-none"
+            type="radio"
+            id="theme-switcher-system"
+            value="system"
+            onChange={handleChange}
+            checked={isChecked('system')}
+          />
+          <label
+            className={
+              'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-none transition-all duration-100 ease-in-out' +
+              ' ' +
+              'hover:bg-[--theme-bg]' +
+              ' ' +
+              'peer-checked/system:bg-[--theme-active-bg]' +
+              ' ' +
+              '[&_svg]:!text-[--theme-btn-color] [&_svg]:transition-colors [&_svg]:duration-100 [&_svg]:ease-in-out' +
+              ' ' +
+              'hover:[&_svg]:!text-[--hover-btn-svg] peer-checked/system:[&_svg]:!text-[--active-svg]'
+            }
+            htmlFor="theme-switcher-system"
+            aria-label="Switch to system mode"
+            title="Switch to system mode"
+          >
+            <SystemIcon />
+          </label>
+        </span>
+        <span style={{ height: '100%' }}>
+          <input
+            className="peer/dark absolute appearance-none outline-none"
+            type="radio"
+            id="theme-switcher-dark"
+            value="dark"
+            onChange={handleChange}
+            checked={isChecked('dark')}
+          />
+          <label
+            className={
+              'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-none transition-all duration-100 ease-in-out' +
+              ' ' +
+              'hover:bg-[--theme-bg]' +
+              ' ' +
+              'peer-checked/dark:bg-[--theme-active-bg]' +
+              ' ' +
+              '[&_svg]:!text-[--theme-btn-color] [&_svg]:transition-colors [&_svg]:duration-100 [&_svg]:ease-in-out' +
+              ' ' +
+              'hover:[&_svg]:!text-[--hover-btn-svg] peer-checked/dark:[&_svg]:!text-[--active-svg]'
+            }
+            htmlFor="theme-switcher-dark"
+            aria-label="Switch to dark mode"
+            title="Switch to dark mode"
+          >
+            <DarkIcon />
+          </label>
+        </span>
+        <span style={{ height: '100%' }}>
+          <input
+            className="peer/light absolute appearance-none outline-none"
+            type="radio"
+            id="theme-switcher-light"
+            value="light"
+            onChange={handleChange}
+            checked={isChecked('light')}
+          />
+          <label
+            className={
+              'flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-none transition-all duration-100 ease-in-out' +
+              ' ' +
+              'hover:bg-[--theme-bg]' +
+              ' ' +
+              'peer-checked/light:bg-[--theme-active-bg]' +
+              ' ' +
+              '[&_svg]:!text-[--theme-btn-color] [&_svg]:transition-colors [&_svg]:duration-100 [&_svg]:ease-in-out' +
+              ' ' +
+              'hover:[&_svg]:!text-[--hover-btn-svg] peer-checked/light:[&_svg]:!text-[--active-svg]'
+            }
+            htmlFor="theme-switcher-light"
+            aria-label="Switch to light mode"
+            title="Switch to light mode"
+          >
+            <SunIcon />
+          </label>
+        </span>
+      </div>
+      <style global jsx>{`
+        .dark {
+          --theme-bg: #111;
+          --theme-border: #2e2e2e;
+          --theme-active-bg: #292929;
+          --theme-btn-color: #888;
+          --active-svg: #fafafa;
+          --hover-btn-svg: #fafafa;
+        }
+
+        .light {
+          --theme-bg: #fafafa;
+          --theme-border: #ebebeb;
+          --theme-active-bg: #e6e5e5;
+          --theme-btn-color: #666666;
+          --active-svg: #171717;
+          --hover-btn-svg: #6666669d;
+        }
+      `}</style>
+    </>
   )
 }
 
