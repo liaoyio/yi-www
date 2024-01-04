@@ -8,7 +8,7 @@ export default function Home() {
       <div className="mx-auto  max-w-7xl flex-1 items-center  justify-center">
         <div className="mt-40 items-center justify-between sm:mt-32 md:flex">
           <div>
-            <div className=" mx-auto mb-3 flex h-7 w-fit items-center rounded-md bg-[#3a1703] px-2 sm:ml-0">
+            <div className="mx-auto mb-3 flex h-7 w-fit items-center rounded-md bg-[#3a1703] px-2 sm:ml-0">
               <p className="text-sm text-[#f56324]">Currently in private beta</p>
             </div>
 
